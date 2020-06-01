@@ -1,0 +1,306 @@
+/*-------------------------------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,body{
+    background-color: white;
+    color:#555;
+    font-family:Arial;
+    font-size:20px;
+    text-rendering: optimizeLegibility;
+    overflow-x:hidden;
+}
+
+/*.clearfix{zoom:1}
+.clearfix{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+*/
+
+/*-------------------------------------------------------------*/
+/* HEADER */
+/*-------------------------------------------------------------*/
+
+header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.767)),to(rgba(0, 0, 0, 0.767))),url(Images_CSS/hero.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.767)),url(Images_CSS/hero.jpg);
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+ }
+
+.hero-text-box{
+    position:absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+   -webkit-transform:translate(-50%,-50%);
+     transform:translate(-50%,-50%);
+}
+
+.logo{
+    margin-top:10px;
+    margin-left:15px;
+    height:90px;
+    width:auto;
+    float:left;
+}
+
+.logo-black{
+    margin-top:5px 0;
+    margin-left:15px;
+    height:50px;
+    width:auto;
+    float:left;
+    display:none;
+    padding:2px 0;
+}
+
+/*---------------MAIN NAVI--------------------*/
+.main-nav{
+    float:right;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-right:20px;    
+    margin-top:30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:80%;
+    padding:6px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid orange;
+}
+
+/*-------------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-------------------------------------------------------------*/
+
+.row{
+    margin:0 auto;
+    width:1140px;
+}
+
+.section-features{
+    padding:80px 0;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.767)),to(rgba(0, 0, 0, 0.767))), url(Images_CSS/lunch.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.767)), url(Images_CSS/lunch.jpg);
+}
+
+.section-meals{
+    padding:80px 0;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.767)),to(rgba(0, 0, 0, 0.767))), url(Images_CSS/img2.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(230, 113, 113, 0.767)), url(Images_CSS/img2.jpg);
+}
+
+/*-------------------------------------------------------------*/
+/*----------- HEADINGS --------------*/
+/*-------------------------------------------------------------*/
+
+h1,h2,h3{
+    font-weight:300;
+    text-transform:uppercase;
+}
+
+h1{
+    margin-bottom:20px;
+    color:white;
+    font-size:200%;
+    word-spacing:2px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size:160%;
+    word-spacing:2px;
+    text-align:center;
+    margin-bottom:30px;
+    letter-spacing: 1px;
+    color:white;
+    margin-top:0;
+}
+
+h2:after{
+    display:block;
+    background-color:orange;
+    content:"";
+    height:3px;
+    width:20%;
+    margin:0 auto;
+    margin-top:30px;
+}
+
+h3{
+    font-size:95%;
+    margin-bottom:15px;
+    color:white;
+}
+
+/*-------------------------------------------------------------*/
+/*-----------PARAGRAPHS-------------*/
+/*-------------------------------------------------------------*/
+
+.long-copy{
+    line-height:145%;
+    width:70%;
+    margin-left:15%;
+    color:white;
+}
+
+.box p{
+    font-size:80%;
+    line-height:145%;
+    text-align:justify;
+    color:white;
+}
+
+/*-------------------------------------------------------------*/
+/*-----------ICONS-----------------*/
+/*-------------------------------------------------------------*/
+
+.icon-big{
+    font-size:250%;
+    display:block;
+    color:rgb(224, 127, 16);
+    margin-bottom:10px;
+}
+
+.icon-small{
+    display:inline-block;
+    width:30px;
+    text-align:center;
+    color:orange;
+    font-size:120%;
+    line-height:120%;
+    vertical-align:middle;
+    margin-top:-2px;
+    margin-right:10px;
+}
+
+/*-------------------------------------------------------------*/
+/*----------- BUTTONS ---------------*/
+/*-------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display:inline-block;
+    padding:10px 30px;
+    text-decoration:none; 
+    border-radius:200px;
+    color:white; 
+    -webkit-transition:background-color 2s, border 2s,color 2s; 
+    transition:background-color 2s, border 2s,color 2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    border:1px solid orange;
+    background-color: orange;
+    margin-right:10px;   
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border:1px solid orange;
+    color:orange;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color:rgb(255, 123, 0);
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    border:1px solid rgb(255, 123, 0);
+    background-color: rgb(255, 123, 0);
+    color:rgb(250, 241, 241);
+    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border:1px solid rgb(255, 123, 0);
+    color:rgb(250, 241, 241);
+}
+
+
+/*-------------------------------------------------------------*/
+/*-----------Meals---------------*/
+/*-------------------------------------------------------------*/
+
+.section-meals{
+    padding:0;
+}
+
+.meals-showcase{
+    list-style:none;
+    width:100%;
+}
+
+.meals-showcase li{
+    display:block;
+    float:left;
+    width:25%;
+
+}
+
+.meals-photo{
+    width:100%;
+    margin:0;
+    overflow:hidden;
+    background-color:black;
+}
+
+.meals-photo img{
+    opacity:0.7;
+    width:100%;
+    height:auto;
+    -webkit-transition:opacity 1,-webkit-transform 2s;
+    transition:opacity 1,-webkit-transform 2s;
+    transition:transform 2s,opacity 1;
+    transition:transform 2s,opacity 1,-webkit-transform 2s;
+    -webkit-transform:scale(1.15);
+            transform:scale(1.15);
+}
+
+.meals-photo img:hover{
+    -webkit-transform:scale(1);
+            transform:scale(1); 
+    opacity:1;
+}
