@@ -122,6 +122,30 @@ header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(230, 113, 113, 0.767)), url(Images_CSS/img2.jpg);
 }
 
+.section-steps{
+    padding:80px 0;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.770)),to(rgba(0, 0, 0, 0.770))), url(Images_CSS/image8.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.770),rgba(0, 0, 0, 0.770)), url(Images_CSS/image8-min.jpg);
+}
+
+.section-cities{
+    padding:80px 0;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.770)),to(rgba(0, 0, 0, 0.770))), url(Images_CSS/WP6.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.770),rgba(0, 0, 0, 0.770)), url(Images_CSS/WP6.jpg);
+}
+
+.box{
+    padding:1%;
+}
+
 /*-------------------------------------------------------------*/
 /*----------- HEADINGS --------------*/
 /*-------------------------------------------------------------*/
@@ -303,4 +327,140 @@ input[type=submit]:active{
     -webkit-transform:scale(1);
             transform:scale(1); 
     opacity:1;
+}
+
+/*-------------------------------------------------------------*/
+/*-----------WORKING STEPS---------------*/
+/*-------------------------------------------------------------*/
+
+.steps-box{
+    margin-top:30px;
+}
+
+.steps-box:first-child{
+    text-align:right;
+    padding-right:3%;
+}
+
+.steps-box:last-child{
+    padding-left:3%;
+}
+
+.app-screen{
+    width:40%;
+    height:40%;
+}
+
+.work-steps{
+    margin:40px;
+    color:white;
+}
+
+.work-steps:last-of-type{
+    margin-bottom:80px;
+}
+
+.work-steps div{
+    border:2px solid orange;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    margin-right:10px;
+    text-align:center;
+    display:block;
+    float:left;
+    padding:5px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border:0;   
+    }
+
+.btn-app img{
+    height:50px;
+    width:auto;
+    margin-right:10px;
+}
+
+/*-------------------------------------------------------------*/
+/*-------------CITIES-------------*/
+/*-------------------------------------------------------------*/
+
+.box img{
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+}
+
+.city-features{
+    margin-bottom:5px;
+    color:white;
+}
+
+/*-------------------------------------------------------------*/
+/*-------------LINKS--------------*/
+/*-------------------------------------------------------------*/
+
+.cities-link:link,
+.cities-link:visited{
+    color:orange;
+    text-decoration:none;
+    border-bottom:2px solid orange;
+    padding-bottom:2px;
+    -webkit-transition:background-color 2s, border 2s, color 2s;
+    transition:background-color 2s, border 2s, color 2s;
+}
+
+.cities-link:hover,
+.cities-link:active{
+    color:rgb(255, 0, 157);
+    border-bottom:2px solid transparent;
+    -webkit-transition:background-color 2s, border 2s, color 2s;
+    transition:background-color 2s, border 2s, color 2s;
+}
+
+/*-------------------------------------------------------------*/
+/*--------------TESTMONIALS----------------*/
+/*-------------------------------------------------------------*/
+
+
+.section-testmonials{
+    color:white;
+    padding:80px 0;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))), url(Images_CSS/WP5.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(Images_CSS/WP5.jpg);
+    background-attachment:fixed;
+}
+
+blockquote{
+    padding:2%;
+    line-height:145%;
+    position: relative;
+    margin-top:40px;
+}
+
+blockquote:before{
+    content:"\201C";
+    font-size:300%;
+    display:block;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+}
+
+cite{
+    font-size:90%;
+    margin-top:25px;
+    display:block;
+}
+
+cite img{
+    height:45px;
+    border-radius:50%; 
+    margin-right:10px;
+    vertical-align:middle;
 }
