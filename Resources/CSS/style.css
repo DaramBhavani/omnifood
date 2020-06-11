@@ -93,6 +93,42 @@ header{
     border-bottom:2px solid orange;
 }
 
+/*--------------STICKY NAVI--------------------*/
+
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.877);
+    box-shadow: 2px 2px 2px rgb(226, 176, 10);
+    z-index: 9999;
+}
+
+/* .sticky .main-nav{
+    margin-top:14px;
+}
+*/
+
+.sticky .main-nav li{
+    margin-top:14px;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color:Black;
+    padding:15px 0;
+}
+
+.sticky .logo{
+    display:none;
+}
+
+.sticky .logo-black{
+    display:block;
+} 
+
 /*-------------------------------------------------------------*/
 /* REUSABLE COMPONENTS */
 /*-------------------------------------------------------------*/
@@ -119,8 +155,9 @@ header{
     background-position:center;
     background-attachment:fixed;
     background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.767)),to(rgba(0, 0, 0, 0.767))), url(Images_CSS/img2.jpg);
-    background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(230, 113, 113, 0.767)), url(Images_CSS/img2.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.767)), url(Images_CSS/img2.jpg);
 }
+
 
 .section-steps{
     padding:80px 0;
@@ -146,6 +183,7 @@ header{
     padding:1%;
 }
 
+
 /*-------------------------------------------------------------*/
 /*----------- HEADINGS --------------*/
 /*-------------------------------------------------------------*/
@@ -162,7 +200,6 @@ h1{
     word-spacing:2px;
     letter-spacing: 1px;
 }
-
 h2{
     font-size:160%;
     word-spacing:2px;
@@ -459,11 +496,12 @@ cite{
 }
 
 cite img{
-    height:45px;
-    border-radius:50%; 
-    margin-right:10px;
-    vertical-align:middle;
+       height:45px;
+       border-radius:50%; 
+       margin-right:10px;
+       vertical-align:middle;
 }
+
 
 /*-------------------------------------------------------------*/
 /*--------------SUBCRIPTION PLANS----------------*/
@@ -545,19 +583,21 @@ cite img{
     margin-top:30px;
 }
 
+
 .contact-form{
     width:100%;
     margin:0 auto;
-}
+ }
+
 
 input[type=text],
 input[type=email],
 select,
 textarea{
-    width:100%;
-    padding:7px;
-    border-radius:3px;
-    border:2px solid orange;
+        width:100%;
+        padding:7px;
+        border-radius:3px;
+        border:2px solid orange;
 }
 
 textarea{
@@ -660,4 +700,25 @@ footer p{
 .ion-social-instagram{
     -webkit-transition: color 1s;
     transition: color 1s;
+}
+
+
+/*-------------------------------------------------------------*/
+/*-----------Animations----------------*/
+/*-------------------------------------------------------------*/
+
+.js-row,
+.js-works,
+.js-cities,
+.js-cities-1{
+    opacity:0;
+    animation-duration:1s;
+}
+
+.js-row.animated
+.js-works.animated
+.js-cities.animated,
+.js-cities-1.animated{
+    opacity:1;
+    animation-duration:1s;
 }
